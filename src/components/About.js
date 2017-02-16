@@ -3,13 +3,17 @@ import React, {Component} from 'react';
 
 // Creating About functional component
 const About = (props) => {
+  /* Setting props to variables for readibility */
+  const skills = props.skills;
+
   return (
     <div id="about">
       <h1>About</h1>
       <div className="uk-grid">
       <div className="uk-card uk-card-default uk-card-body uk-width-1-2@m">
         <h3 className="uk-card-title">Default</h3>
-        <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <img src="http://placehold.it/350x350" />
+        {/* <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> */}
     </div>
     {/* About section */}
     <div className="uk-card uk-card-default uk-card-body uk-width-1-2@m">
@@ -25,6 +29,8 @@ const About = (props) => {
       {/* Skills. Pulling from firebase */}
       <h2>Skills</h2>
       <p>Will be from firebase</p>
+      {/* Rendering skills from skills property */}
+      <p>Skills:{skills}</p>
       {/* <ul>
         <li>React.js</li>
         <li>Express</li>

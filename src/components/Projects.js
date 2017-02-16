@@ -3,6 +3,8 @@ import React, {Component} from 'react';
 
 // will be updating state
 class Projects extends Component {
+  //const projects = props.projects;
+
   render() {
     return (
       <div id="projects">

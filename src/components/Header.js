@@ -11,11 +11,11 @@ let Header = (props) => {
         <ul className="uk-visible@m">
           {/* Aligining logo to the left */}
           <span className="uk-position-left"><li>DF</li></span>
-          {/* Aligining nav links to the right */}
+          {/* Aligining nav links to the right -adding smooth scroll */}
           <section className="uk-position-right">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a data-uk-scroll href="#">Home</a></li>
+            <li><a data-uk-scroll href="#about">About</a></li>
+            <li><a data-uk-scroll href="#projects">Projects</a></li>
           </section>
         </ul>
 
@@ -24,12 +24,10 @@ let Header = (props) => {
       </nav>
       {/* vertical/horizontally aligning section using uikit */}
       <section>
-        <p>
           <h1 className="uk-position-center">Dominic Farquharson
             <br />
             Web Developer
           </h1>
-        </p>
       </section>
     </header>
   )
