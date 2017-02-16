@@ -4,7 +4,9 @@ import React, {Component} from 'react';
 // Creating About functional component
 const About = (props) => {
   return (
-    <div>About</div>
+    <div id="about">
+      <h1>About</h1>
+    </div>  
   )
 }
 

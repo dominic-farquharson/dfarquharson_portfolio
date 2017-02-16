@@ -1,0 +1,38 @@
+/* Function to set positioning of page sections */
+/* Main container */
+main {
+  /* About section */
+  /* Projects section */
+  /* Footer section */ }
+  main header {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    /* nav bar */ }
+    main header nav ul {
+      margin: 0;
+      position: relative;
+      top: 0;
+      /* logo */ }
+      main header nav ul li {
+        font-size: 3rem;
+        display: inline-block;
+        padding: 20px; }
+  main #about {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%; }
+  main #projects {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 200%; }
+  main footer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 300%; }
+
+/*# sourceMappingURL=style.css.map */
