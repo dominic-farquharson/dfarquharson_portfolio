@@ -11,6 +11,12 @@
 main {
   header {
     @include position(0%);
+    /*Unsplash - download image */
+    background:url('https://images.unsplash.com/photo-1473800447596-01729482b8eb?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
+    background-size:cover;
+    background-attachment: fixed;
+    color:white;
+
 
     /* nav bar */
     nav{
@@ -19,6 +25,9 @@ main {
         margin:0;
         position:relative;
         top:0;
+        height:100px;
+        background-color:black;
+
         li {
           font-size:3rem;
           display:inline-block;
@@ -28,6 +37,10 @@ main {
         span {
         }
       }
+    }
+    /* Centered Text - name */
+    section>h1 {
+      color:white;
     }
 
   }
@@ -42,12 +55,28 @@ main {
   /* Projects section */
   #projects {
     @include position(300%);
+
+    .projectsCard {
+      margin-bottom:20px;
+    }
+
+    /* Removing padding from ul*/
+    ul {
+      padding:0px;
+    }
   }
   /* Footer section */
   footer {
-    @include position(400%);
+    @include position(600%);
   }
 
 }
+
+// .navbar>ul {
+//   position:relative;
+//   height:20%;
+//   background-color:black;
+//   font-size:4em;
+// }
 
 /* media queries */

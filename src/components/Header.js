@@ -6,7 +6,7 @@ import '../css/style.css';
 let Header = (props) => {
   return (
     <header>
-      <nav>
+      <nav className="navbar">
         {/* Navbar for devices greater than 960px */}
         <ul className="uk-visible@m">
           {/* Aligining logo to the left */}
