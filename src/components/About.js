@@ -9,8 +9,8 @@ const About = (props) => {
   // function to print skills
   let printSkills =() => {
     return (
-      skills.map( (e)=>{
-        return(<li>{e}</li>)
+      skills.map( (e, i)=>{
+        return(<li key={i}>{e}</li>)
       })
     )
   }
