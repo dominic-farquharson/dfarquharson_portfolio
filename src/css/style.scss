@@ -34,14 +34,18 @@ main {
   /* About section */
   #about {
     @include position(100%);
+    #skills {
+      // position:relative;
+      // top:10%;
+    }
   }
   /* Projects section */
   #projects {
-    @include position(200%);
+    @include position(300%);
   }
   /* Footer section */
   footer {
-    @include position(300%);
+    @include position(400%);
   }
 
 }

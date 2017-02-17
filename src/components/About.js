@@ -6,6 +6,15 @@ const About = (props) => {
   /* Setting props to variables for readibility */
   const skills = props.skills;
 
+  // function to print skills
+  let printSkills =() => {
+    return (
+      skills.map( (e)=>{
+        return(<li>{e}</li>)
+      })
+    )
+  }
+
   return (
     <div id="about">
       <h1>About</h1>
@@ -14,7 +23,7 @@ const About = (props) => {
         <h3 className="uk-card-title">Default</h3>
         <img src="http://placehold.it/350x350" />
         {/* <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> */}
-    </div>
+      </div>
     {/* About section */}
     <div className="uk-card uk-card-default uk-card-body uk-width-1-2@m">
       <h3 className="uk-card-title">Hi, I'm Dominic. <br /> <span className="subText"> But you can call me Dom. </span></h3>
@@ -27,20 +36,19 @@ const About = (props) => {
         </div>
       </div>
       {/* Skills. Pulling from firebase */}
-      <h2>Skills</h2>
-      <p>Will be from firebase</p>
+      {/* <p>Skills</p>
+      <p>Will be from firebase</p> */}
       {/* Rendering skills from skills property */}
-      <p>Skills:{skills}</p>
+      <h1>Skills</h1>
+      <ul id="skills">
+        {/* Running function to print skills  */}
+        {printSkills()}
+      </ul>
+
+      {/* {skills.map( (e)=>{
+        return(<li>{e}</li>)
+      })} */}
       {/* <ul>
-        <li>React.js</li>
-        <li>Express</li>
-        <li>Ruby</li>
-        <li>Rails</li>
-        <p>Css</p>
-        <li>SCSS, CSS </li>
-        <li>JavaScript</li>
-        <li>Materialize</li>
-        <li>Bootstrap</li>
 
       </ul> */}
     </div>
