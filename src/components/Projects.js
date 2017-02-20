@@ -15,29 +15,29 @@ class Projects extends Component {
       // Printing responsive cards to hold projects
       Object.keys(projects).map( (project, key)=>{
         return(
-        <section key={key}>
+        <section className="portfolioCard" key={key}>
           <h1>{projects[project]['name']}</h1>
           <div className="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
               <div className="uk-card-media-left uk-cover-container">
-                  <img src="https://getuikit.com/docs/images/light.jpg" alt="" data-uk-cover />
+                  <img className="portfolioImage" title={projects[project]['title']} src={projects[project]['image']} alt={projects[project]['alt']} data-uk-cover />
                   <canvas width="600" height="400"></canvas>
               </div>
               <div>
                   <div className="uk-card-body">
-                      <h3 className="uk-card-title">Media Left</h3>
-                      <span>Name:</span>{projects[project]['name']}
+                      <h3 className="uk-card-title">{projects[project]['name']}</h3>
                       <br />
-                      <a href={projects[project]['link']}>Link to site</a>
-                      <br />
-                      <a href={projects[project]['repo']}>Link to repo</a>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                        do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                        id est laborum.
+                      {/* Getting description and technology used */}
+                      <p>
+                        <span>Description:</span>  
+                        {projects[project]['description']}
+                        <br /><br />
+                        <span>Built with:</span> {projects[project]['technology']}
                       </p>
+                      {/* link to site and Repo buttons  */}
+                      <section className="siteRepoLinks">
+                        <a className="btn btn-default" href={projects[project]['link']}>Link to site</a>
+                        <a className="btn btn-default" href={projects[project]['repo']}>Link to repo</a>
+                      </section>
                   </div>
               </div>
           </div>

@@ -19,15 +19,38 @@ let Header = (props) => {
           </section>
         </ul>
 
-        {/* Navbar for devices less than 960px */}
+        {/* Mobile NavBar  */}
+        <i className="uk-position-left uk-hidden@m  fa fa-bars fa-2x" aria-hidden="true" data-uk-toggle="target: #offcanvas-overlay"></i>
+        <div className="uk-hidden@m" id="offcanvas-overlay" data-uk-offcanvas="overlay: true">
+          <div className="uk-offcanvas-bar">
+          <ul>
+            <li><a data-uk-scroll href="#">Home</a></li>
+            <li><a data-uk-scroll href="#about">About</a></li>
+            <li><a data-uk-scroll href="#projects">Projects</a></li>
+          </ul>
+
+        </div>
+      </div>
+      {/* Mobile Navbar End  */}
+
 
       </nav>
+
+
+
+
+
+
       {/* vertical/horizontally aligning section using uikit */}
       <section>
           <h1 className="uk-position-center">Dominic Farquharson
             <br />
             Web Developer
           </h1>
+      </section>
+      {/* Learn more button */}
+      <section id="learnMore">
+        {/* <a href="#about" data-uk-scroll>Learn More</a> */}
       </section>
     </header>
   )

@@ -5,7 +5,7 @@ import React, {Component} from 'react';
 let Footer = (props) => {
     return (
       <footer>
-        <h1>Footer</h1>
+        <h1>&copy; Dominic Farquaharson 2017</h1>
       </footer>
     )
 }

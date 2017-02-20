@@ -15,40 +15,73 @@ main {
     background-attachment: fixed;
     color: white;
     /* nav bar */
-    /* Centered Text - name */ }
+    /* Centered Text - name */
+    /* Learn More button */ }
     main header nav ul {
       margin: 0;
       position: relative;
       top: 0;
-      height: 100px;
-      background-color: black;
+      height: 80px;
       /* logo */ }
       main header nav ul li {
-        font-size: 3rem;
+        font-size: 2rem;
         display: inline-block;
         padding: 20px; }
+      main header nav ul li > a {
+        color: white; }
     main header section > h1 {
       color: white; }
+    main header #learnMore {
+      position: absolute;
+      bottom: 20%;
+      width: 200px;
+      left: 45%;
+      color: white; }
+    main header #learnMore > a {
+      color: white;
+      font-size: 2.3em; }
   main #about {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 100%; }
+    main #about .subText {
+      font-size: 1.5rem;
+      font-style: italic; }
+    main #about .about > p {
+      justify-content: center;
+      font-size: 1rem;
+      line-height: 3rem; }
   main #projects {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 300%;
+    top: 200%;
+    /* Paragraphs */
+    /* Built With Sub Text */
     /* Removing padding from ul*/ }
+    main #projects p {
+      font-size: 1.2rem;
+      line-height: 3rem; }
+    main #projects span {
+      font-weight: bold; }
+    main #projects .portfolioCard {
+      margin: 100px 0px; }
     main #projects .projectsCard {
       margin-bottom: 20px; }
+    main #projects .portfolioImage {
+      background-size: contain;
+      width: 100%;
+      height: 100%; }
     main #projects ul {
       padding: 0px; }
+    main #projects .siteRepoLinks > a {
+      margin-right: 20px; }
   main footer {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 600%; }
+    top: 500%; }
 
 /* media queries */
 
