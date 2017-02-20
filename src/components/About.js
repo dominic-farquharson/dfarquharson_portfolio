@@ -20,8 +20,7 @@ const About = (props) => {
       <h1>About</h1>
       <div className="uk-grid">
         <div className="uk-card uk-card-default uk-card-body uk-width-1-2@m">
-          <h3 className="uk-card-title">Default</h3>
-          <img src="http://placehold.it/350x350"/>
+          <img title="Picture of Dominc Farquharson" alt="Picture of Dominic Farquharson." id="aboutImage" src="/assets/images/me 2014.jpg"/>
           {/* <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> */}
         </div>
         {/* About section */}

@@ -9,6 +9,11 @@
 /* Main container */
 
 main {
+  // positioning main relative to page
+  // position:relative;
+  #container {
+    @include position(100%);
+  }
   header {
     @include position(0%);
     /*Unsplash - download image */
@@ -20,6 +25,15 @@ main {
 
     /* nav bar */
     nav{
+      a:hover {
+        color:blue;
+        text-decoration:none;
+      }
+
+      a:active, a:link {
+        color:white;
+        text-decoration: none;
+      }
 
       ul {
         margin:0;
@@ -63,7 +77,11 @@ main {
   }
   /* About section */
   #about {
-    @include position(100%);
+    #aboutImage {
+      height:70%;
+      width:50%;
+    }
+    // @include position(100%);
     .subText {
       font-size:1.5rem;
       font-style:italic;
@@ -82,7 +100,7 @@ main {
   }
   /* Projects section */
   #projects {
-    @include position(200%);
+    // @include position(200%);
 
     /* Paragraphs */
     p {
@@ -119,7 +137,14 @@ main {
   }
   /* Footer section */
   footer {
-    @include position(500%);
+    background-color:#003cb3;
+    width:100%;
+    // text
+    h1 {
+      margin:0;
+      color:white;
+      font-size:1.5rem;
+    }
   }
 
 }

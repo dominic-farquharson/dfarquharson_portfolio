@@ -53,15 +53,17 @@ class App extends Component {
       <div className="App">
         <main>
           <Header />
-          {/* Setting skilsl prop to skills state, will be pulled from firebase - allow for server side updating of skills*/}
-          <About
-            skills={this.state.skills}
-          />
-          {/* Setting projects prop to projects state, also pulled from firebase */}
-          <Projects
-            projects={this.state.projects}
-          />
-          <Footer />
+            <div id="container">
+            {/* Setting skilsl prop to skills state, will be pulled from firebase - allow for server side updating of skills*/}
+            <About
+              skills={this.state.skills}
+            />
+            {/* Setting projects prop to projects state, also pulled from firebase */}
+            <Projects
+              projects={this.state.projects}
+            />
+            <Footer />
+          </div>
         </main>
       </div>
 
