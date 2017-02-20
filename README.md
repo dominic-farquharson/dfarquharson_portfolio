@@ -13,6 +13,7 @@ This is my personal portfolio website. The website was meant to provide some ins
 ![Project 2 - Portfolio](public/assets/images/project2.png)
 ---
 ##Technologies Used:
+
 - HTML
 - SaSS
 - React.js
@@ -20,6 +21,7 @@ This is my personal portfolio website. The website was meant to provide some ins
 - UI Kit
 - Firebase
 - axios
+
 ---
 ##Installation Instructions
 
@@ -28,7 +30,7 @@ This is my personal portfolio website. The website was meant to provide some ins
 - Run npm start from terminal.
 
 ---
-##Sample Code: Printing Game Stats
+##Sample Code: Printing Projects and Skills
 ```javascript
 
 // ajax call to firebase - setting state
