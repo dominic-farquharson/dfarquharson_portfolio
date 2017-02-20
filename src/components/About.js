@@ -21,7 +21,6 @@ const About = (props) => {
       <div className="uk-grid">
         <div className="uk-card uk-card-default uk-card-body uk-width-1-2@m">
           <img title="Picture of Dominc Farquharson" alt="Picture of Dominic Farquharson." id="aboutImage" src="/assets/images/me 2014.jpg"/>
-          {/* <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> */}
         </div>
         {/* About section */}
         <div className="about uk-card uk-card-default uk-card-body uk-width-1-2@m">
@@ -36,22 +35,6 @@ const About = (props) => {
           </p>
         </div>
       </div>
-      {/* Skills. Pulling from firebase */}
-      {/* <p>Skills</p>
-      <p>Will be from firebase</p> */}
-      {/* Rendering skills from skills property */}
-      {/* <h1>Skills</h1> */}
-      {/* <ul id="skills"> */}
-        {/* Running function to print skills  */}
-        {/* {printSkills()} */}
-      {/* </ul> */}
-
-      {/* {skills.map( (e)=>{
-        return(<li>{e}</li>)
-      })} */}
-      {/* <ul>
-
-      </ul> */}
     </div>
   )
 }
