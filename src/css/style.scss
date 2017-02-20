@@ -17,7 +17,7 @@ main {
   header {
     @include position(0%);
     /*Unsplash - download image */
-    background:url('https://images.unsplash.com/photo-1473800447596-01729482b8eb?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
+    background:url('/assets/images/portfolio.png');
     background-size:cover;
     background-attachment: fixed;
     color:white;
