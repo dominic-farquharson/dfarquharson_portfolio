@@ -13,14 +13,15 @@ let Header = (props) => {
           <span className="uk-position-left"><li>DF</li></span>
           {/* Aligining nav links to the right -adding smooth scroll */}
           <section className="uk-position-right">
-            <li><a data-uk-scroll href="#">Home</a></li>
+            {/* <li><a data-uk-scroll href="#">Home</a></li> */}
             <li><a data-uk-scroll href="#about">About</a></li>
             <li><a data-uk-scroll href="#projects">Projects</a></li>
+            <li><a data-uk-scroll href="#contact">Contact</a></li>
           </section>
         </ul>
 
         {/* Mobile NavBar  */}
-        <i className="uk-position-left uk-hidden@m  fa fa-bars fa-2x" aria-hidden="true" data-uk-toggle="target: #offcanvas-overlay"></i>
+        <i className="uk-position-left uk-hidden@m  navIcon fa fa-bars fa-2x" aria-hidden="true" data-uk-toggle="target: #offcanvas-overlay"></i>
         <div className="uk-hidden@m" id="offcanvas-overlay" data-uk-offcanvas="overlay: true">
           <div className="uk-offcanvas-bar">
           <ul>

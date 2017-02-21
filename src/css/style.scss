@@ -9,15 +9,18 @@
 /* Main container */
 
 main {
-  // positioning main relative to page
-  // position:relative;
   #container {
     @include position(100%);
   }
+  // Styling all p tags
+  p {
+      text-align:left;
+  }
+
   header {
     @include position(0%);
     /*Unsplash - download image */
-    background:url('/assets/images/portfolio.png');
+    background:url('/assets/images/siteImage.jpg');
     background-size:cover;
     background-attachment: fixed;
     color:white;
@@ -33,6 +36,10 @@ main {
       a:active, a:link {
         color:white;
         text-decoration: none;
+      }
+      /*  Mobile nav icon */
+      .navIcon{
+        padding:20px;
       }
 
       ul {
@@ -87,10 +94,19 @@ main {
       font-style:italic;
     }
 
+    // .uk-card-body {
+    //   padding:0;
+    // }
+
     .about>p {
       justify-content: center;
       font-size:1rem;
       line-height: 3rem;
+
+      // width:50%;
+      // margin:0 auto;
+      // padding:30px;
+      // padding-left:30px;
       // width:80%;
     }
     #skills {

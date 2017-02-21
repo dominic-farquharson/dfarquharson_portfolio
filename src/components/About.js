@@ -18,12 +18,12 @@ const About = (props) => {
   return (
     <div id="about">
       <h1>About</h1>
-      <div className="uk-grid">
-        <div className="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+      <div className="uk-column-1-2@m">
+        <div className="uk-card uk-card-default uk-card-body">
           <img title="Picture of Dominc Farquharson" alt="Picture of Dominic Farquharson." id="aboutImage" src="/assets/images/me 2014.jpg"/>
         </div>
         {/* About section */}
-        <div className="about uk-card uk-card-default uk-card-body uk-width-1-2@m">
+        <div className="about uk-card uk-card-default uk-card-body">
           <h3 className="uk-card-title">Hi, I'm Dominic.
             <br/>
             <span className="subText">
