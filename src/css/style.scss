@@ -19,8 +19,8 @@ main {
 
   header {
     @include position(0%);
-    /*Unsplash - download image */
-    background:url('/assets/images/siteImage.jpg');
+    /*Unsplash - Optimized Image */
+    background:url('/assets/images/Optimized-siteImage.jpg');
     background-size:cover;
     background-attachment: fixed;
     color:white;
