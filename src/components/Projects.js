@@ -15,12 +15,11 @@ class Projects extends Component {
       // Printing responsive cards to hold projects
       Object.keys(projects).map( (project, key)=>{
         return(
-        <section className="portfolioCard" key={key}>
+        <section className="portfolioCard projects" key={key}>
           <h1>{projects[project]['name']}</h1>
           <div className="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
               <div className="uk-card-media-left uk-cover-container">
                   <img className="portfolioImage" title={projects[project]['title']} src={projects[project]['image']} alt={projects[project]['alt']} data-uk-cover />
-                  <canvas width="600" height="400"></canvas>
               </div>
               <div>
                   <div className="uk-card-body">
@@ -28,7 +27,7 @@ class Projects extends Component {
                       <br />
                       {/* Getting description and technology used */}
                       <p>
-                        <span>Description:</span>  
+                        <span>Description:</span>
                         {projects[project]['description']}
                         <br /><br />
                         <span>Built with:</span> {projects[project]['technology']}
