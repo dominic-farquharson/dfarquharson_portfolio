@@ -7,10 +7,30 @@ import '../css/style.css';
 class Projects extends Component {
   constructor() {
     super();
-    // bidning methods
+    
+    // binding methods
     this.printProjects = this.printProjects.bind(this);
   }
 
+  // function to toggle custom div
+  toggleDiv = (id) => {
+    // selecting div anchor
+    let target = document.querySelector(id);
+    // selecting body element
+    let body = document.querySelector('body');
+
+    // hiding div
+    if(target.style.display==="block") {
+      target.style.display = "none";
+    }
+
+    // showing div
+    else {   
+      target.style.display="block";
+      
+    }
+ 
+  }
   // function to print projects
   printProjects(projects) {
     return (
@@ -30,9 +50,22 @@ class Projects extends Component {
               </div>
               <div className="uk-card-footer">
                   <a className="btn btn-default" href={projects[project]['link']}>Visit Site</a>
-                  <a className="btn btn-default" href={projects[project]['link']}>Learn More</a>     
+                  
+                  {/* Button that opens div */}
+                  <a className="btn btn-default" href={`#div${key}`} onClick={ ()=> this.toggleDiv(`#div${key}`)} >Learn More</a> 
+
                   <a className="btn btn-default" href={projects[project]['repo']}>View Code</a>
-              </div>     
+              </div>  
+
+              {/* div containing additional details about project - centered */}
+              <div id={`div${key}`} className="projectDiv">
+                      {/* Project Description */}
+                      <p><span>Description:</span> {projects[project]['description']}</p>
+                      {/* Tech used */}
+                      <p><span>Technology used:</span> {projects[project]['technology']}</p>
+                      <button type="button" className="btn btn-default" onClick={ ()=> this.toggleDiv(`#div${key}`)}>Close</button>
+                               
+              </div>
           </li>       
         )
       })
