@@ -16,6 +16,9 @@ main {
   p {
       text-align:left;
   }
+  h1 {
+    border-bottom: 3px black solid;
+  }
 
   header {
     @include position(0%);
@@ -129,23 +132,28 @@ main {
       font-weight:bold;
     }
 
-    .portfolioCard {
-      margin:100px 0px;
-    }
+    // .portfolioCard {
+    //   margin:100px 0px;
+    // }
 
-    .projectsCard {
-      margin-bottom:20px;
-    }
+   
 
-    .portfolioImage {
-      background-size:contain;
-      width:100%;
-      height:100%;
-    }
+    // .portfolioImage {
+    //   background-size:contain;
+    //   width:100%;
+    //   height:100%;
+    // }
 
     /* Removing padding from ul*/
     ul {
       padding:0px;
+       .projectsCard {
+      margin-bottom:20px;
+      img {
+        width:600px;
+        height:800px;
+      }
+     }
     }
     .siteRepoLinks>a {
       margin-right:20px;
