@@ -1,5 +1,5 @@
 // importing react and component
-import React, {Component} from 'react';
+import React from 'react';
 import '../css/style.css';
 
 // stateless header component
@@ -24,24 +24,15 @@ let Header = (props) => {
         <i className="uk-position-left uk-hidden@m  navIcon fa fa-bars fa-2x" aria-hidden="true" data-uk-toggle="target: #offcanvas-overlay"></i>
         <div className="uk-hidden@m" id="offcanvas-overlay" data-uk-offcanvas="overlay: true">
           <div className="uk-offcanvas-bar">
-          <ul>
-            <li><a data-uk-scroll href="#">Home</a></li>
-            <li><a data-uk-scroll href="#about">About</a></li>
-            <li><a data-uk-scroll href="#projects">Projects</a></li>
-          </ul>
-
+            <ul>
+              <li><a data-uk-scroll href="#">Home</a></li>
+              <li><a data-uk-scroll href="#about">About</a></li>
+              <li><a data-uk-scroll href="#projects">Projects</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
       {/* Mobile Navbar End  */}
-
-
       </nav>
-
-
-
-
-
-
       {/* vertical/horizontally aligning section using uikit */}
       <section>
           <h1 className="uk-position-center">Dominic Farquharson

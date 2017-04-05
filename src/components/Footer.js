@@ -1,5 +1,5 @@
 // importing react and component
-import React, {Component} from 'react';
+import React from 'react';
 
 // Footer functional component
 let Footer = (props) => {
