@@ -1,4 +1,4 @@
-#Portfolio
+# Portfolio
 
 This is my personal portfolio website. The website was meant to provide some insight into my background and to showcase my projects.
 
@@ -12,7 +12,7 @@ This is my personal portfolio website. The website was meant to provide some ins
 
 ![Project 2 - Portfolio](public/assets/images/project2.png)
 ---
-##Technologies Used:
+## Technologies Used:
 
 - HTML
 - SaSS
@@ -23,14 +23,14 @@ This is my personal portfolio website. The website was meant to provide some ins
 - axios
 
 ---
-##Installation Instructions
+## Installation Instructions
 
 - Download folder.
 - Run npm install in terminal.
 - Run npm start from terminal.
 
 ---
-##Sample Code: Printing Projects and Skills
+## Sample Code: Printing Projects and Skills
 ```javascript
 
 // ajax call to firebase - setting state
@@ -53,7 +53,7 @@ fetchSkillsAndProjects() {
 }
 ```
 ---
-##Build Strategy
+## Build Strategy
 ```
 React.js:
 
@@ -72,12 +72,12 @@ Styling:
 
 ```  
 
-##Future Goals:
+## Future Goals:
 - Styling! Styling! Styling!
 - Maybe pull from an inspirational quote API and add that to landing page.
 - Possibly make a fixed header when user scrolls down.
 
 
-##Author
+## Author
 
 Dominic Farquharson
