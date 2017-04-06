@@ -2,11 +2,19 @@ import React, {Component} from 'react';
 
 // Modal component
 const Modal = (props) => (
-    <section className="projectModal">
+    <article className="projectModal">
         <h1>{props.name}</h1>
-        <p>{props.description}</p>
+        {/* Project description */}  
+        <section>
+            <img src={props.src} alt={props.alt} />
+        </section>
+         <section>
+            <p>{props.description}</p>
+            <button type="button" onClick={props.link}>View Site</button>
+            <button type="button" onClick={props.github}>View Code</button>        
+        </section>
         <button type="button" onClick={props.close}>Close</button>
-    </section>
+    </article>
 );
 
 
@@ -28,11 +36,14 @@ class Project extends Component {
     }
 
     render() {
+        // Setting state of modal to a variable
         const viewModal = this.state.modal;
+        // setting this.props to a variable
         const project = this.props;
         if(!viewModal) {
             return (
-                <li>
+                <li className="projectImage">
+                    {/*<div>Learn More</div>*/}
                      <img
                         // toggling Modal
                         onClick={this.toggleModal} 
@@ -45,9 +56,13 @@ class Project extends Component {
             return (
                 <li>
                     <Modal 
+                        src={project.image}  
+                        alt={project.alt}
                         name={project.name} 
                         close={this.toggleModal}
                         description={project.description}
+                        link={project.link}
+                        github={project.repo}
                     />
                 </li>
             )
