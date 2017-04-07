@@ -17,30 +17,12 @@ class Projects extends Component {
     this.printProjects = this.printProjects.bind(this);
   }
 
-  // // function to toggle custom div
-  // toggleDiv = (id) => {
-  //   // selecting div anchor
-  //   let target = document.querySelector(id);
-  //   // selecting body element
-  //   let body = document.querySelector('body');
-
-  //   // hiding div
-  //   if(target.style.display==="block") {
-  //     target.style.display = "none";
-  //   }
-
-  //   // showing div
-  //   else {   
-  //     target.style.display="block";
-      
-  //   }
- 
-  // }
   // function to print projects
   printProjects(projects) {
     return (
       // Printing responsive cards to hold projects
       Object.keys(projects).map( (project, key)=>{
+        console.log(projects)
         return(
           <Project 
             key={key}
@@ -48,6 +30,10 @@ class Projects extends Component {
             image={projects[project]['image']}  
             alt={projects[project]['alt']}
             description={projects[project]['description']}
+            technology={projects[project]['technology']}
+            github={projects[project]['repo']}
+            link={projects[project]['link']}
+            
           />
         )
 

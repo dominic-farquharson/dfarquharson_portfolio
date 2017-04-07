@@ -3,17 +3,22 @@ import React, {Component} from 'react';
 // Modal component
 const Modal = (props) => (
     <article className="projectModal">
-        <h1>{props.name}</h1>
-        {/* Project description */}  
         <section>
+            <h1>{props.name}</h1>
+        </section>
+        {/* Project description */}  
+        <section className="modalImage">
             <img src={props.src} alt={props.alt} />
         </section>
-         <section>
-            <p>{props.description}</p>
-            <button type="button" onClick={props.link}>View Site</button>
-            <button type="button" onClick={props.github}>View Code</button>        
+         <section className="modalBody">
+             {/* Description */}
+            <p><span>Description:</span>{props.description}</p>
+            {/* Technology Used */}
+            <p><span>Technology used:</span>{props.technology}</p> 
+            <a className="btn btn-default" href={props.link}>View Site</a>
+            <a className="btn btn-default" href={props.github}>View Code</a>        
         </section>
-        <button type="button" onClick={props.close}>Close</button>
+        <button className="btn btn-default closeModal" type="button" onClick={props.close}>Close</button>
     </article>
 );
 
@@ -27,11 +32,18 @@ class Project extends Component {
     }
     // display Modal
     toggleModal = () => {
+        // state of modal
         let modal = this.state.modal;
+        // selecting body element
+        const body = document.querySelector('body');
         if(modal) {
             this.setState({modal: false})
+            // hack - removing scroll bar from body element
+            body.setAttribute('style', 'overflow:none')
         } else {
             this.setState({modal:true})
+            // hack - replacing scroll bar in body element
+            body.setAttribute('style', 'overflow:hidden')            
         }
     }
 
@@ -62,7 +74,8 @@ class Project extends Component {
                         close={this.toggleModal}
                         description={project.description}
                         link={project.link}
-                        github={project.repo}
+                        github={project.github}
+                        technology={project.technology}
                     />
                 </li>
             )

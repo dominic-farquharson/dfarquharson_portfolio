@@ -35,7 +35,34 @@
   z-index:1;
   background-color:  white;
   color: black;
+  overflow: scroll;
   
+}
+
+/*.projectModal>.modalImage, .projectModal>.modalBody {
+  display:inline-block;
+  position: absolute;
+  width:50%;
+}*/
+
+.projectModal>.modalImage {
+  width:90%; 
+  margin:0 auto;
+}
+.projectModal>.modalBody {
+  width:75%;
+  margin:0 auto;
+   
+}
+
+.projectModal>.modalBody>a {
+  margin:5px;
+}
+
+
+/* Close Modal Button */
+.projectModal>.closeModal {
+  margin:10px;
 }
 
 .projectImage {
@@ -46,6 +73,12 @@
   opacity:.7;
   cursor: pointer;
 }
+
+/* Footer styling */
+footer>h1 {
+  padding-bottom:10px;
+}
+
 
 /*.projectImage>div {
   position:absolute;
