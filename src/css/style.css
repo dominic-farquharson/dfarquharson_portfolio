@@ -73,7 +73,7 @@ main {
     /* Removing padding from ul*/ }
     main #projects p {
       font-size: 1.2rem;
-      line-height: 3rem; }
+      line-height: 2rem; }
     main #projects span {
       font-weight: bold; }
     main #projects .portfolioCard {
