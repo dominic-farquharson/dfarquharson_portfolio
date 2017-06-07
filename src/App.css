@@ -71,6 +71,7 @@
 .projectImage {
   position:relative;
   margin-bottom:50px;
+  height: 50vh;
 }
 .projectImage:hover {
   opacity:.7;
