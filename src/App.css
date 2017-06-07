@@ -46,9 +46,12 @@
 }*/
 
 .projectModal>.modalImage {
-  width:90%; 
+  width:65vw; 
+  height: 50vh;
   margin:0 auto;
 }
+
+
 .projectModal>.modalBody {
   width:75%;
   margin:0 auto;
@@ -116,4 +119,21 @@ Contact Form
 
 .contactForm form input[type='submit'] {
   width: 100px;
+}
+
+/********
+Name
+*****/
+#sub {
+  font-size: 2rem;
+}
+
+
+/* Resizing project image for mobile */
+@media all and (max-width: 480px) {
+  .projectModal>.modalImage {
+    width:100vw; 
+    height: 50vh;
+    margin:0 auto;
+  }
 }

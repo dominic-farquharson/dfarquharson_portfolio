@@ -38,7 +38,7 @@ let Header = (props) => {
       <section>
           <h1 className="uk-position-center">Dominic Farquharson
             <br />
-            Web Developer
+            <span id="sub">Web Developer</span>
           </h1>
       </section>
       {/* Learn more button */}
