@@ -22,7 +22,6 @@ class Projects extends Component {
     return (
       // Printing responsive cards to hold projects
       Object.keys(projects).map( (project, key)=>{
-        console.log(projects)
         return(
           <Project 
             key={key}
@@ -47,7 +46,7 @@ class Projects extends Component {
 
     return (
       <div id="projects">
-          <h1>Projects</h1>
+          <h2>Projects</h2>
           {/* Invoking function to Create responsive card to hold projects using ui kit */}
           <ul className="uk-grid-collapse uk-child-width-1-2@m" data-uk-grid>
             {this.printProjects(projects)}

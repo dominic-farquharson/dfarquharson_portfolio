@@ -93,3 +93,27 @@ footer>h1 {
   /*font-size:4rem;*/
   /*display:block;*/
 }
+
+/*****
+Contact Form
+*****/
+.contactForm > form {
+  margin: 50px;
+}
+
+.contactForm > form > textarea{
+  width: 65vw;
+  height: 200px;
+}
+
+
+.contactForm form input {
+  margin: 10px auto;
+  height: 50px;
+  display: block;
+  width: 65vw;
+}
+
+.contactForm form input[type='submit'] {
+  width: 100px;
+}

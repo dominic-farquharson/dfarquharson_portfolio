@@ -28,6 +28,7 @@ let Header = (props) => {
               <li><a data-uk-scroll href="#">Home</a></li>
               <li><a data-uk-scroll href="#about">About</a></li>
               <li><a data-uk-scroll href="#projects">Projects</a></li>
+              <li><a data-uk-scroll href="#contact">Contact</a></li>              
             </ul>
           </div>
         </div>

@@ -5,6 +5,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Projects from './components/Projects';
 import About from './components/About';
+import Contact from './components/Contact';
+
 // importing axios
 import axios from 'axios';
 
@@ -61,6 +63,8 @@ class App extends Component {
             <Projects
               projects={this.state.projects}
             />
+            {/* Contact Component */}
+            <Contact />
             <Footer />
           </div>
         </main>
