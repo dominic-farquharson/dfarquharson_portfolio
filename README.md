@@ -2,7 +2,7 @@
 
 This is my personal portfolio website. The website was meant to provide some insight into my background and to showcase my projects.
 
-[Link to site](https://frozen-headland-15363.herokuapp.com/)
+[Link to site](https://www.dfarquharson.com)
 
 #### Landing Page
 ![Portfolio Landing Page](public/assets/images/portfolio.png)
