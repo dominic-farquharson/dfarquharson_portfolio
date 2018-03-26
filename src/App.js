@@ -54,7 +54,7 @@ class App extends Component {
       <div className="App">
         <main>
           <Header />
-            <div id="container">
+          <div id="container">
             {/* Setting skilsl prop to skills state, will be pulled from firebase - allow for server side updating of skills*/}
             <About
               skills={this.state.skills}

@@ -31,7 +31,7 @@ const About = (props) => {
             </span>
           </h3>
           <p>
-            I am currently a student in the WDI program at General Assembly. Web developement has always been an interest of mine.I was born and raised in the Bronx, NY. When I am not hunched over a computer screen, I enjoy reading and writing. My favorite book series is Wheel of Time. In my spare time I am also writing a fiction novel that I hope to complete by the end of the year.
+            I am currently working as an Instructional Associate for the WDI program at General Assembly. Web developement has always been an interest of mine.I was born and raised in the Bronx, NY. When I am not hunched over a computer screen, I enjoy reading and writing. My favorite book series is Wheel of Time. In my spare time I am also writing a fiction novel that I hope to complete by the end of the year.
           </p>
         </div>
       </div>
