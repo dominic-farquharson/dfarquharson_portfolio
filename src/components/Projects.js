@@ -9,9 +9,9 @@ import Project from './Project';
 class Projects extends Component {
   constructor() {
     super();
-    this.state = {
-      viewModal: false
-    }
+    // this.state = {
+    //   viewModal: false
+    // }
     
     // binding methods
     this.printProjects = this.printProjects.bind(this);
@@ -45,10 +45,10 @@ class Projects extends Component {
     const projects = this.props.projects;
 
     return (
-      <div id="projects">
+      <div className="container"> 
           <h2>Projects</h2>
           {/* Invoking function to Create responsive card to hold projects using ui kit */}
-          <ul className="uk-grid-collapse uk-child-width-1-2@m" data-uk-grid>
+          <ul className="row justify-content-center">
             {this.printProjects(projects)}
           </ul>
       </div>
