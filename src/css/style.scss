@@ -7,13 +7,13 @@
 }
 
 
-
+body { padding-top: 70px; }
 
 /* Main container */
 
 main {
   #container {
-    @include position(100%);
+    // @include position(100%);
   }
   // Styling all p tags
   p {
@@ -192,7 +192,9 @@ main {
   
 }
 
-
+.nav-mobile > li {
+  display: block;
+}
 
 // .navbar>ul {
 //   position:relative;

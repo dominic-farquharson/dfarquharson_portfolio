@@ -1,14 +1,12 @@
 /* Function to set positioning of page sections */
+body {
+  padding-top: 70px; }
+
 /* Main container */
 main {
   /* About section */
   /* Projects section */
   /* Footer section */ }
-  main #container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 100%; }
   main p {
     text-align: left; }
   main header {
@@ -103,6 +101,9 @@ main {
   z-index: 1;
   background-color: black;
   color: white; }
+
+.nav-mobile > li {
+  display: block; }
 
 /* media queries */
 
