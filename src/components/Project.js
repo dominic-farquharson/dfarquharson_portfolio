@@ -51,7 +51,7 @@ class Project extends Component {
         // Setting state of modal to a variable
         // const viewModal = this.state.modal;
         // setting this.props to a variable
-        const { name, description, alt, link, github, image } = this.props;
+        const { name, description, alt, link, github, image, technology } = this.props;
         return (
           // <div className="card col-lg-4 col-md-6 col-sm-12 article">
           <div className="card col-lg-5 col-md-6 col-sm-12">
@@ -59,7 +59,9 @@ class Project extends Component {
             <div className="card-body">
               <h5 className="card-title">{name}</h5>
               <p className="card-text block-with-text">{description}</p>
-              <a target="_blank" href={github} className="btn btn-primary">View code</a>
+              Built With: <p className="block-with-text"> {technology}</p>
+              <a target="_blank" href={github} className="btn btn-outline">View code</a>
+              <a target="_blank" href={link} className="btn btn-outline">View site</a>
             </div>
           </div>
         );
