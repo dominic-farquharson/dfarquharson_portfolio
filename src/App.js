@@ -8,6 +8,7 @@ import Projects from './components/Projects';
 import About from './components/About';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
+import NotFound from './components/NotFound.jsx';
 
 // importing axios
 import axios from 'axios';
@@ -56,60 +57,64 @@ class App extends Component {
       <div className="App">
         <main>
           <Router>
-            <Switch>
               <div>
                 <Navbar />
-                <Route
-                  exact path="/"
-                  render={props => {
-                    return (
-                      <Home /> 
-                    );
-                  }}
-                />
+                <Switch>
+                  <Route
+                    exact path="/"
+                    render={props => {
+                      return (
+                        <Home /> 
+                      );
+                    }}
+                  />
 
-                {/* Setting skilsl prop to skills state, will be pulled from firebase - allow for server side updating of skills*/}
-                <Route 
-                  exact path="/about"
-                  render={props => {
-                    return (
-                      <div>
-                        <About
-                          skills={this.state.skills}
-                        />
-                        <Footer />
-                      </div>
-                    );
-                  }}
-                />
-                <Route 
-                  exact path="/projects"
-                  render={props => {
-                    {/* Setting projects prop to projects state, also pulled from firebase */}
-                    return (
-                      <div>
-                        <Projects
-                          projects={this.state.projects}
-                        />
-                        <Footer />
-                      </div>
-                    );
-                  }}
-                />
+                  {/* Setting skilsl prop to skills state, will be pulled from firebase - allow for server side updating of skills*/}
+                  <Route 
+                    exact path="/about"
+                    render={props => {
+                      return (
+                        <div>
+                          <About
+                            skills={this.state.skills}
+                          />
+                          <Footer />
+                        </div>
+                      );
+                    }}
+                  />
+                  <Route 
+                    exact path="/projects"
+                    render={props => {
+                      {/* Setting projects prop to projects state, also pulled from firebase */}
+                      return (
+                        <div>
+                          <Projects
+                            projects={this.state.projects}
+                          />
+                          <Footer />
+                        </div>
+                      );
+                    }}
+                  />
 
-                <Route 
-                  exact path="/contact"
-                  render={props => {
-                    return (
-                      <div>
-                        <Contact />
-                        <Footer />
-                      </div>
-                    );
-                  }}
-                />
+                  <Route 
+                    exact path="/contact"
+                    render={props => {
+                      return (
+                        <div>
+                          <Contact />
+                          <Footer />
+                        </div>
+                      );
+                    }}
+                  />
+
+                  <Route 
+                    component={NotFound}
+                  />
+                </Switch>
               </div>
-            </Switch>
           </Router>
         </main>
       </div>
