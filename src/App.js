@@ -73,9 +73,12 @@ class App extends Component {
                   exact path="/about"
                   render={props => {
                     return (
-                      <About
-                        skills={this.state.skills}
-                      />
+                      <div>
+                        <About
+                          skills={this.state.skills}
+                        />
+                        <Footer />
+                      </div>
                     );
                   }}
                 />
@@ -84,9 +87,12 @@ class App extends Component {
                   render={props => {
                     {/* Setting projects prop to projects state, also pulled from firebase */}
                     return (
-                      <Projects
-                        projects={this.state.projects}
-                      />
+                      <div>
+                        <Projects
+                          projects={this.state.projects}
+                        />
+                        <Footer />
+                      </div>
                     );
                   }}
                 />
@@ -95,12 +101,13 @@ class App extends Component {
                   exact path="/contact"
                   render={props => {
                     return (
-                      <Contact />
+                      <div>
+                        <Contact />
+                        <Footer />
+                      </div>
                     );
                   }}
                 />
-                
-                {/* <Footer /> */}
               </div>
             </Switch>
           </Router>

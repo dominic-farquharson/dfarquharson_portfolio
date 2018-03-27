@@ -7,7 +7,7 @@
 }
 
 
-body { padding-top: 70px; }
+body { padding-top: 70px;  padding-bottom: 70px; }
 
 /* Main container */
 
@@ -262,4 +262,10 @@ main {
 
 .site-background {
   background:url('/assets/images/Optimized-siteImage.jpg');
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 68px;
 }

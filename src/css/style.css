@@ -1,6 +1,7 @@
 /* Function to set positioning of page sections */
 body {
-  padding-top: 70px; }
+  padding-top: 70px;
+  padding-bottom: 70px; }
 
 /* Main container */
 main {
@@ -157,5 +158,10 @@ main {
 
 .site-background {
   background: url("/assets/images/Optimized-siteImage.jpg"); }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 68px; }
 
 /*# sourceMappingURL=style.css.map */

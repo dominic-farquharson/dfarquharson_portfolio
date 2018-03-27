@@ -48,7 +48,7 @@ class Projects extends Component {
       <div className="container"> 
           <h2>Projects</h2>
           {/* Invoking function to Create responsive card to hold projects using ui kit */}
-          <ul className="row justify-content-center">
+          <ul className="row justify-content-center" style={{paddingLeft: 0}}>
             {this.printProjects(projects)}
           </ul>
       </div>
