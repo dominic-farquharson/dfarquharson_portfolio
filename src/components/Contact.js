@@ -10,7 +10,7 @@ const Contact = _ =>
             <textarea name="message" placeholder="Enter your message" required></textarea>       
             {/* Avoiding spam */}
             <input type="text" name="_gotcha" style={{display:'none'}} />
-            <input className="uk-button-default uk-button" type="submit" value="Send" />
+            <input style={{color: 'black', borderColor: 'black'}} className="btb btn-outline-primary" type="submit" value="Send" />
         </form>
     </section>
 ;
