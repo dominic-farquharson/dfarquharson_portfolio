@@ -59,45 +59,16 @@ class Project extends Component {
             <div className="card-body">
               <h5 className="card-title">{name}</h5>
               <p className="card-text block-with-text">{description}</p>
-              Built With: <p className="block-with-text"> {technology}</p>
+              <p className="block-with-text"> 
+                <span className="font-weight-bold">Built With: </span>
+                {technology}
+              </p>
               <a target="_blank" href={github} className="btn btn-outline">View code</a>
               <a target="_blank" href={link} className="btn btn-outline">View site</a>
             </div>
           </div>
         );
       }
-
-
-
-    //     if(!viewModal) {
-    //         return (
-    //             <li className="projectImage">
-    //                 {/*<div>Learn More</div>*/}
-    //                  <img
-    //                     // toggling Modal
-    //                     onClick={this.toggleModal} 
-    //                     src={project.image}  
-    //                     alt={project.alt}
-    //                  />
-    //             </li> 
-    //         )
-    //     } else {
-    //         return (
-    //             <li>
-    //                 <Modal 
-    //                     src={project.image}  
-    //                     alt={project.alt}
-    //                     name={project.name} 
-    //                     close={this.toggleModal}
-    //                     description={project.description}
-    //                     link={project.link}
-    //                     github={project.github}
-    //                     technology={project.technology}
-    //                 />
-    //             </li>
-    //         )
-    //     }
-    // }
 }
 
 export default Project;
